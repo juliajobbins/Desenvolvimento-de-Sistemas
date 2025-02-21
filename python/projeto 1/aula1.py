@@ -9,6 +9,7 @@ while (limite_tentativas >= tentativa):
     chute = int(input("Digite o seu chute: "))
     if (chute == sorteio):
         print("Parabéns, você acertou!")
+        break
     elif (chute > sorteio):
         print("Chute um número menor!")
     elif (chute < sorteio):
