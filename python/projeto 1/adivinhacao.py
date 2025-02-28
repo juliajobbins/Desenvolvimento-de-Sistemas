@@ -1,6 +1,5 @@
 import random
 
-
 print("##### BEM-VINDO(A) AO JOGO! #####")
 print("Escolha o nível de dificuldade:")
 tentativa = 1
