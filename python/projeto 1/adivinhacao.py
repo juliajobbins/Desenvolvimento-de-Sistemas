@@ -39,5 +39,5 @@ while (limite_tentativas >= tentativa):
         print("Chute um número maior!")
     tentativa = tentativa + 1
     if(tentativa > limite_tentativas and chute != sorteio):
-        print("Você perdeu! O número era: ", sorteio,)
+        print("Você perdeu! O número era: ", sorteio)
         print("Jogue novamente e boa sorte!")
