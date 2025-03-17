@@ -10,7 +10,7 @@ def somatoria(lista):
     return soma
 
 somagastos = somatoria(gastos)
-print ("Soma dos gastos: " , somagastos)
+print ("Soma dos gastos: ", somagastos)
 somaganhos = somatoria(ganhos)
-print ("Soma dos ganhos: " , somaganhos)
-print ("Saldo final: " , somaganhos - somagastos)
+print ("Soma dos ganhos: ", somaganhos)
+print ("Saldo final: ", somaganhos - somagastos)
