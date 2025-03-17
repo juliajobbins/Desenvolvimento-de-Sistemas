@@ -9,8 +9,8 @@ def somatoria(lista):
         contador = contador + 1
     return soma
 
-somacusto = somatoria(custos)
-print ("Soma dos custos: " , somacusto)
+somagastos = somatoria(gastos)
+print ("Soma dos gastos: " , somagastos)
 somaganhos = somatoria(ganhos)
 print ("Soma dos ganhos: " , somaganhos)
-print ("Saldo final: " , somaganhos - somacusto)
+print ("Saldo final: " , somaganhos - somagastos)
