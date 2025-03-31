@@ -1,5 +1,8 @@
-ganhos = [3500, 55]
-gastos = [1500, 54, 245, 98]
+ganhos = input("Digite os valores dos ganhos separados por vírgula: ")
+ganhos = [float(valor) for valor in ganhos.split(",")]
+
+gastos = input("Digite os valores dos gastos separados por vírgula: ")
+gastos = [float(valor) for valor in gastos.split(",")]
 
 def somatoria(lista):
     contador = 0
