@@ -9,9 +9,9 @@ def carregar_palavras(nome_arquivo):
         return []
 
 temas = {
-    "kpop": "forca/gruposkpop.txt",
-    "doramas": "forca/doramas.txt",
-    "animes": "forca/animes.txt"
+    "kpop": "gruposkpop.txt",
+    "doramas": "doramas.txt",
+    "animes": "animes.txt"
 }
 
 print("Escolha um tema:")
