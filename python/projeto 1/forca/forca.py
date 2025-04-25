@@ -1,50 +1,42 @@
 import random
 
-# Função para carregar palavras
 def carregar_palavras(nome_arquivo):
     try:
-        with open(nome_arquivo, "r", encoding="utf-8") as arquivo:
+        with open(nome_arquivo, "r") as arquivo:
             return [linha.strip().lower() for linha in arquivo.readlines()]
     except FileNotFoundError:
         print(f"Erro: O arquivo {nome_arquivo} não foi encontrado.")
         return []
 
-# Temas
 temas = {
     "kpop": "forca/gruposkpop.txt",
     "doramas": "forca/doramas.txt",
     "animes": "forca/animes.txt"
 }
 
-# Exibir opções de temas
 print("Escolha um tema:")
 for tema in temas:
     print(f"- {tema}")
 
-# Escolha do usuário
 tema_escolhido = input("Digite o tema desejado: ").strip().lower()
 while tema_escolhido not in temas:
     print("Tema inválido! Tente novamente.")
     tema_escolhido = input("Digite o tema desejado: ").strip().lower()
-
-# Carregar palavras do arquivo
+    
 palavras = carregar_palavras(temas[tema_escolhido])
 if not palavras:
     print("Não foi possível carregar palavras. O jogo será encerrado.")
     exit()
 
-# Escolher palavra aleatória dentro do tema
 palavra = random.choice(palavras)
 limite_tentativas = len(palavra) + 5
 acertou = False
 enforcou = False
 
-# Iniciar lista de letras acertadas
 letras_acertadas = ["_" if letra != " " else " " for letra in palavra]
 
 contador = 1
 
-# Loop do jogo
 while not acertou and not enforcou:
     print(" ".join(letras_acertadas))
     print(f"Tentativas: {contador}/{limite_tentativas}")
