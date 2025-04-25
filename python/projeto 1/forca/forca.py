@@ -54,6 +54,6 @@ while not acertou and not enforcou:
     
     if "_" not in letras_acertadas:
         acertou = True
-        print("Parabéns! Você encontrou a palavra secreta! ♡⸜(˶˃ ᵕ ˂˶)⸝♡")
+        print(f"Parabéns! Você encontrou a palavra secreta! ♡⸜(˶˃ ᵕ ˂˶)⸝♡\nPalavra acertada: {palavra}")
 
     contador += 1
