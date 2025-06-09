@@ -9,8 +9,20 @@ class Conta:
         self.__senha = senha
 
     @property
+    def agencia(self):
+        return self.__agencia
+
+    @property
     def numero(self):
         return self.__numero
+    
+    @property
+    def titular(self):
+        return self.__titular
+
+    @property
+    def senha(self):
+        return self.__senha
     
     def extrato(self):
         return self.__saldo
